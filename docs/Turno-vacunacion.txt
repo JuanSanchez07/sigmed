@@ -1,0 +1,12 @@
+[Inicio] ──(Solicitud)──> pendiente
+                             │
+            ┌────────────────┴────────────────┐
+            ▼                                 ▼
+        rechazado                          aprobado
+       (Terminal)                     (movimiento: -1 dosis)
+                                              │
+                      ┌───────────────────────┼───────────────────────┐
+                      ▼                       ▼                       ▼
+                  aplicado                cancelado                ausente
+                 (Terminal)          (movimiento: +1 dosis)  (movimiento: +1 dosis)
+                                          (Terminal)              (Terminal)
